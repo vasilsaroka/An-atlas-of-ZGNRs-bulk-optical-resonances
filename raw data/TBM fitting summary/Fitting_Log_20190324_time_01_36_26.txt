@@ -1,0 +1,3031 @@
+# Created by Vasil Saroka 
+# Wolfram Mathematica 11.3.0 for Microsoft Windows (64-bit) (March 7, 2018)
+# FitTBParametersToQEDataVersion5 started on Sun 24 Mar 2019 01:36:26
+
+# Hopping integrals, eV
+t0 = 0
+t1 = x19
+t2 = x20
+t3 = x21
+
+# Overlapping integrals
+s0 = 1
+s1 = x22
+s2 = x23
+s3 = x24
+
+# Strain exponent
+beta = 0
+
+# Edge corrections to the hopping integrals, eV
+dt0_1 = 0
+dt0_2 = 0
+dt1_1 = 0
+dt1_2 = 0
+dt2_1 = 0
+dt2_2 = 0
+dt3_1 = 0
+dt3_2 = 0
+
+
+# Initial ranges for fitted parameters
+parameter          	          min value	          max value
+x19                	          -3.069000	          -2.511000
+x20                	          -0.748000	          -0.612000
+x21                	          -0.330000	          -0.270000
+x22                	           0.270000	           0.330000
+x23                	           0.041400	           0.050600
+x24                	           0.035100	           0.042900
+
+# Minimization function options
+MinimizationFunction          	                     NMinimize
+WorkingPrecision              	                             6
+Method                        	         DifferentialEvolution
+MaxIterations                 	                          1000
+
+# Range of bands around the Fermi level: E_f-n/2 to Ef+n/2:
+12
+
+#Which of 12 selected bands shall be fitted to ab initio data?
+1
+2
+3
+4
+5
+6
+7
+8
+
+# Ab initio data to fit
+k values, tpiba_b
+  0.000000	  0.000000	  0.000000
+  0.000000	  0.042663	  0.000000
+  0.000000	  0.085070	  0.000000
+  0.000000	  0.127732	  0.000000
+  0.000000	  0.170395	  0.000000
+  0.000000	  0.212802	  0.000000
+  0.000000	  0.255465	  0.000000
+  0.000000	  0.298127	  0.000000
+  0.000000	  0.340534	  0.000000
+  0.000000	  0.383197	  0.000000
+  0.000000	  0.425860	  0.000000
+  0.000000	  0.468267	  0.000000
+  0.000000	  0.510929	  0.000000
+  0.000000	  0.553592	  0.000000
+  0.000000	  0.595999	  0.000000
+  0.000000	  0.638662	  0.000000
+  0.000000	  0.681324	  0.000000
+  0.000000	  0.723731	  0.000000
+  0.000000	  0.766394	  0.000000
+  0.000000	  0.809057	  0.000000
+  0.000000	  0.851464	  0.000000
+  0.000000	  0.894126	  0.000000
+  0.000000	  0.936789	  0.000000
+  0.000000	  0.979196	  0.000000
+  0.000000	  1.021859	  0.000000
+  0.000000	  1.064521	  0.000000
+  0.000000	  1.106929	  0.000000
+  0.000000	  1.149591	  0.000000
+  0.000000	  1.192254	  0.000000
+  0.000000	  1.234661	  0.000000
+  0.000000	  1.277323	  0.000000
+band 1, eV
+ -7.423100
+ -7.417100
+ -7.400100
+ -7.370100
+ -7.329100
+ -7.276100
+ -7.211100
+ -7.135100
+ -7.047100
+ -6.948100
+ -6.837100
+ -6.715100
+ -6.581100
+ -6.437100
+ -6.282100
+ -6.116100
+ -5.939100
+ -5.753100
+ -5.556100
+ -5.349100
+ -5.134100
+ -4.909100
+ -4.676100
+ -4.435100
+ -4.187100
+ -3.932100
+ -3.672100
+ -3.407100
+ -3.140100
+ -2.872100
+ -2.610100
+band 2, eV
+ -6.910100
+ -6.904100
+ -6.887100
+ -6.858100
+ -6.817100
+ -6.764100
+ -6.700100
+ -6.624100
+ -6.537100
+ -6.439100
+ -6.329100
+ -6.208100
+ -6.076100
+ -5.934100
+ -5.781100
+ -5.617100
+ -5.444100
+ -5.261100
+ -5.068100
+ -4.867100
+ -4.658100
+ -4.440100
+ -4.217100
+ -3.987100
+ -3.753100
+ -3.517100
+ -3.280100
+ -3.047100
+ -2.821100
+ -2.609100
+ -2.601100
+band 3, eV
+ -6.115100
+ -6.109100
+ -6.092100
+ -6.063100
+ -6.023100
+ -5.971100
+ -5.907100
+ -5.833100
+ -5.747100
+ -5.650100
+ -5.542100
+ -5.423100
+ -5.294100
+ -5.154100
+ -5.004100
+ -4.845100
+ -4.676100
+ -4.499100
+ -4.314100
+ -4.122100
+ -3.923100
+ -3.720100
+ -3.514100
+ -3.307100
+ -3.103100
+ -2.907100
+ -2.724100
+ -2.562100
+ -2.434100
+ -2.351100
+ -2.320100
+band 4, eV
+ -5.074100
+ -5.069100
+ -5.051100
+ -5.023100
+ -4.983100
+ -4.931100
+ -4.869100
+ -4.795100
+ -4.710100
+ -4.615100
+ -4.508100
+ -4.392100
+ -4.265100
+ -4.128100
+ -3.983100
+ -3.828100
+ -3.666100
+ -3.496100
+ -3.321100
+ -3.141100
+ -2.960100
+ -2.779100
+ -2.604100
+ -2.440100
+ -2.296100
+ -2.183100
+ -2.115100
+ -2.103100
+ -2.154100
+ -2.343100
+ -2.411100
+band 5, eV
+ -3.882100
+ -3.876100
+ -3.859100
+ -3.830100
+ -3.790100
+ -3.738100
+ -3.676100
+ -3.602100
+ -3.517100
+ -3.422100
+ -3.316100
+ -3.199100
+ -3.073100
+ -2.937100
+ -2.793100
+ -2.641100
+ -2.481100
+ -2.317100
+ -2.149100
+ -1.982100
+ -1.821100
+ -1.672100
+ -1.550100
+ -1.472100
+ -1.460100
+ -1.529100
+ -1.671100
+ -1.866100
+ -2.095100
+ -2.263100
+ -2.427100
+band 6, eV
+ -2.789100
+ -2.783100
+ -2.765100
+ -2.736100
+ -2.695100
+ -2.642100
+ -2.577100
+ -2.501100
+ -2.413100
+ -2.314100
+ -2.204100
+ -2.083100
+ -1.951100
+ -1.808100
+ -1.655100
+ -1.493100
+ -1.322100
+ -1.143100
+ -0.958100
+ -0.769100
+ -0.581100
+ -0.398100
+ -0.233100
+ -0.100100
+ -0.019100
+  0.001900
+ -0.012100
+ -0.023100
+ -0.032100
+ -0.034100
+ -0.040100
+band 7, eV
+  2.235900
+  2.234900
+  2.231900
+  2.225900
+  2.217900
+  2.204900
+  2.187900
+  2.163900
+  2.131900
+  2.090900
+  2.038900
+  1.973900
+  1.893900
+  1.797900
+  1.685900
+  1.554900
+  1.407900
+  1.243900
+  1.065900
+  0.877900
+  0.682900
+  0.489900
+  0.309900
+  0.158900
+  0.053900
+  0.007900
+ -0.004100
+ -0.014100
+ -0.022100
+ -0.030100
+ -0.028100
+band 8, eV
+  3.478900
+  3.479900
+  3.479900
+  3.478900
+  3.476900
+  3.472900
+  3.463900
+  3.447900
+  3.423900
+  3.388900
+  3.339900
+  3.274900
+  3.192900
+  3.091900
+  2.970900
+  2.829900
+  2.671900
+  2.497900
+  2.311900
+  2.117900
+  1.925900
+  1.744900
+  1.590900
+  1.485900
+  1.456900
+  1.516900
+  1.656900
+  1.846900
+  1.912900
+  1.992900
+  1.963900
+
+# System under consideration
+unit cell atoms (x, y, z), Angstrom
+  0.000000	  0.000000	  0.000000
+ -0.710000	  1.229756	  0.000000
+  1.420000	  0.000000	  0.000000
+  2.130000	  1.229756	  0.000000
+  4.260000	  0.000000	  0.000000
+  3.550000	  1.229756	  0.000000
+  5.680000	  0.000000	  0.000000
+  6.390000	  1.229756	  0.000000
+  8.520000	  0.000000	  0.000000
+  7.810000	  1.229756	  0.000000
+  9.940000	  0.000000	  0.000000
+ 10.650000	  1.229756	  0.000000
+
+translation vector (x, y, z), Angstrom
+  0.000000	  2.459512	  0.000000
+
+distances to the n-th order nearest-neighbors, Angstrom
+0 order :	  0.000000
+1 order :	  1.420000
+2 order :	  2.459512
+3 order :	  2.840000
+
+step 1 Sun 24 Mar 2019 01:36:30
+fitted parameters
+ -2.897901
+ -0.674578
+ -0.286336
+  0.272877
+  0.045643
+  0.040191
+deviations from the previous step
+  0.171099
+  0.073422
+  0.043664
+  0.002877
+  0.004243
+  0.005091
+minimum value
+ 785.699620
+deviation from the previous step
+ 785.699620
+
+step 2 Sun 24 Mar 2019 01:36:35
+fitted parameters
+ -2.798303
+ -0.654256
+ -0.301042
+  0.275769
+  0.043533
+  0.043189
+deviations from the previous step
+  0.099599
+  0.020322
+ -0.014706
+  0.002891
+ -0.002110
+  0.002997
+minimum value
+ 765.521210
+deviation from the previous step
+-20.178409
+
+step 3 Sun 24 Mar 2019 01:36:41
+fitted parameters
+ -2.794305
+ -0.624796
+ -0.335777
+  0.260711
+  0.043966
+  0.035919
+deviations from the previous step
+  0.003998
+  0.029460
+ -0.034735
+ -0.015058
+  0.000433
+ -0.007270
+minimum value
+ 697.610450
+deviation from the previous step
+-67.910769
+
+step 4 Sun 24 Mar 2019 01:36:47
+fitted parameters
+ -2.794305
+ -0.624796
+ -0.335777
+  0.260711
+  0.043966
+  0.035919
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 697.610450
+deviation from the previous step
+  0.000000
+
+step 5 Sun 24 Mar 2019 01:36:53
+fitted parameters
+ -2.745301
+ -0.556987
+ -0.291612
+  0.262799
+  0.041481
+  0.042887
+deviations from the previous step
+  0.049004
+  0.067809
+  0.044165
+  0.002088
+ -0.002485
+  0.006968
+minimum value
+ 641.973720
+deviation from the previous step
+-55.636723
+
+step 6 Sun 24 Mar 2019 01:36:59
+fitted parameters
+ -3.012970
+ -0.635650
+ -0.293828
+  0.235226
+  0.047503
+  0.035947
+deviations from the previous step
+ -0.267668
+ -0.078663
+ -0.002215
+ -0.027573
+  0.006022
+ -0.006940
+minimum value
+ 625.290090
+deviation from the previous step
+-16.683634
+
+step 7 Sun 24 Mar 2019 01:37:07
+fitted parameters
+ -3.166110
+ -0.612375
+ -0.307566
+  0.213836
+  0.047408
+  0.037366
+deviations from the previous step
+ -0.153141
+  0.023274
+ -0.013739
+ -0.021390
+ -0.000094
+  0.001419
+minimum value
+ 532.903860
+deviation from the previous step
+-92.386224
+
+step 8 Sun 24 Mar 2019 01:37:15
+fitted parameters
+ -3.166110
+ -0.612375
+ -0.307566
+  0.213836
+  0.047408
+  0.037366
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 532.903860
+deviation from the previous step
+  0.000000
+
+step 9 Sun 24 Mar 2019 01:37:23
+fitted parameters
+ -3.166110
+ -0.612375
+ -0.307566
+  0.213836
+  0.047408
+  0.037366
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 532.903860
+deviation from the previous step
+  0.000000
+
+step 10 Sun 24 Mar 2019 01:37:33
+fitted parameters
+ -3.166110
+ -0.612375
+ -0.307566
+  0.213836
+  0.047173
+  0.043244
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+ -0.000236
+  0.005878
+minimum value
+ 517.157370
+deviation from the previous step
+-15.746500
+
+step 11 Sun 24 Mar 2019 01:37:43
+fitted parameters
+ -3.029194
+ -0.521049
+ -0.289891
+  0.213636
+  0.037504
+  0.040433
+deviations from the previous step
+  0.136917
+  0.091326
+  0.017675
+ -0.000200
+ -0.009669
+ -0.002812
+minimum value
+ 419.962570
+deviation from the previous step
+-97.194794
+
+step 12 Sun 24 Mar 2019 01:37:55
+fitted parameters
+ -2.984848
+ -0.441734
+ -0.271267
+  0.217596
+  0.038039
+  0.045233
+deviations from the previous step
+  0.044345
+  0.079316
+  0.018625
+  0.003960
+  0.000535
+  0.004800
+minimum value
+ 378.131850
+deviation from the previous step
+-41.830724
+
+step 13 Sun 24 Mar 2019 01:38:08
+fitted parameters
+ -2.984848
+ -0.441734
+ -0.271267
+  0.217596
+  0.038039
+  0.045233
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 378.131850
+deviation from the previous step
+  0.000000
+
+step 14 Sun 24 Mar 2019 01:38:22
+fitted parameters
+ -3.084449
+ -0.435945
+ -0.309390
+  0.202051
+  0.037192
+  0.041574
+deviations from the previous step
+ -0.099601
+  0.005789
+ -0.038123
+ -0.015545
+ -0.000847
+ -0.003660
+minimum value
+ 323.681830
+deviation from the previous step
+-54.450020
+
+step 15 Sun 24 Mar 2019 01:38:38
+fitted parameters
+ -3.084449
+ -0.435945
+ -0.309390
+  0.202051
+  0.037192
+  0.041574
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 323.681830
+deviation from the previous step
+  0.000000
+
+step 16 Sun 24 Mar 2019 01:38:55
+fitted parameters
+ -3.398928
+ -0.380536
+ -0.294499
+  0.182620
+  0.044412
+  0.043951
+deviations from the previous step
+ -0.314479
+  0.055409
+  0.014890
+ -0.019431
+  0.007219
+  0.002377
+minimum value
+ 280.357540
+deviation from the previous step
+-43.324287
+
+step 17 Sun 24 Mar 2019 01:39:13
+fitted parameters
+ -3.231812
+ -0.353769
+ -0.303603
+  0.168697
+  0.045150
+  0.037507
+deviations from the previous step
+  0.167115
+  0.026767
+ -0.009103
+ -0.013924
+  0.000738
+ -0.006443
+minimum value
+ 230.258230
+deviation from the previous step
+-50.099310
+
+step 18 Sun 24 Mar 2019 01:39:35
+fitted parameters
+ -3.069064
+ -0.353769
+ -0.303603
+  0.168697
+  0.045150
+  0.048774
+deviations from the previous step
+  0.162749
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.011266
+minimum value
+ 218.555570
+deviation from the previous step
+-11.702662
+
+step 19 Sun 24 Mar 2019 01:39:57
+fitted parameters
+ -3.071906
+ -0.182782
+ -0.253240
+  0.153308
+  0.041743
+  0.037505
+deviations from the previous step
+ -0.002843
+  0.170987
+  0.050362
+ -0.015388
+ -0.003407
+ -0.011269
+minimum value
+ 150.457270
+deviation from the previous step
+-68.098300
+
+step 20 Sun 24 Mar 2019 01:40:21
+fitted parameters
+ -3.071906
+ -0.182782
+ -0.253240
+  0.153308
+  0.041743
+  0.037505
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 150.457270
+deviation from the previous step
+  0.000000
+
+step 21 Sun 24 Mar 2019 01:40:46
+fitted parameters
+ -3.259658
+ -0.243673
+ -0.536676
+  0.157207
+  0.039264
+  0.048332
+deviations from the previous step
+ -0.187751
+ -0.060891
+ -0.283436
+  0.003898
+ -0.002479
+  0.010827
+minimum value
+ 112.985290
+deviation from the previous step
+-37.471978
+
+step 22 Sun 24 Mar 2019 01:41:14
+fitted parameters
+ -3.259658
+ -0.243673
+ -0.536676
+  0.154857
+  0.031655
+  0.049486
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+ -0.002350
+ -0.007609
+  0.001153
+minimum value
+ 103.280140
+deviation from the previous step
+ -9.705151
+
+step 23 Sun 24 Mar 2019 01:41:44
+fitted parameters
+ -3.350715
+ -0.152149
+ -0.540460
+  0.163441
+  0.035203
+  0.028675
+deviations from the previous step
+ -0.091058
+  0.091524
+ -0.003784
+  0.008584
+  0.003548
+ -0.020810
+minimum value
+ 99.667533
+deviation from the previous step
+ -3.612607
+
+step 24 Sun 24 Mar 2019 01:42:16
+fitted parameters
+ -3.382761
+ -0.135901
+ -0.291608
+  0.142617
+  0.027604
+  0.065892
+deviations from the previous step
+ -0.032046
+  0.016248
+  0.248852
+ -0.020824
+ -0.007600
+  0.037217
+minimum value
+ 92.814239
+deviation from the previous step
+ -6.853294
+
+step 25 Sun 24 Mar 2019 01:42:50
+fitted parameters
+ -3.300555
+  0.019472
+ -0.353633
+  0.081664
+  0.050877
+  0.042658
+deviations from the previous step
+  0.082206
+  0.155373
+ -0.062025
+ -0.060953
+  0.023273
+ -0.023234
+minimum value
+ 65.955367
+deviation from the previous step
+-26.858872
+
+step 26 Sun 24 Mar 2019 01:43:27
+fitted parameters
+ -2.792893
+ -0.109502
+ -0.476657
+  0.065534
+  0.019796
+  0.050634
+deviations from the previous step
+  0.507662
+ -0.128974
+ -0.123024
+ -0.016131
+ -0.031081
+  0.007975
+minimum value
+ 41.067957
+deviation from the previous step
+-24.887410
+
+step 27 Sun 24 Mar 2019 01:44:06
+fitted parameters
+ -2.701920
+ -0.100969
+ -0.314587
+  0.036226
+  0.043157
+  0.024592
+deviations from the previous step
+  0.090972
+  0.008533
+  0.162070
+ -0.029308
+  0.023361
+ -0.026041
+minimum value
+ 31.560418
+deviation from the previous step
+ -9.507539
+
+step 28 Sun 24 Mar 2019 01:44:48
+fitted parameters
+ -3.232147
+ -0.048492
+ -0.529151
+  0.103426
+  0.038309
+  0.043622
+deviations from the previous step
+ -0.530227
+  0.052477
+ -0.214563
+  0.067200
+ -0.004848
+  0.019029
+minimum value
+ 25.809791
+deviation from the previous step
+ -5.750627
+
+step 29 Sun 24 Mar 2019 01:45:33
+fitted parameters
+ -3.232147
+ -0.048492
+ -0.529151
+  0.103426
+  0.038309
+  0.043622
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 25.809791
+deviation from the previous step
+  0.000000
+
+step 30 Sun 24 Mar 2019 01:46:21
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.077258
+  0.096346
+  0.033622
+ -0.036703
+ -0.008788
+ -0.003467
+minimum value
+ 11.292831
+deviation from the previous step
+-14.516960
+
+step 31 Sun 24 Mar 2019 01:47:11
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 32 Sun 24 Mar 2019 01:48:04
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 33 Sun 24 Mar 2019 01:49:01
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 34 Sun 24 Mar 2019 01:50:00
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 35 Sun 24 Mar 2019 01:51:03
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 36 Sun 24 Mar 2019 01:52:09
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 37 Sun 24 Mar 2019 01:53:19
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 38 Sun 24 Mar 2019 01:54:32
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 39 Sun 24 Mar 2019 01:55:49
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 40 Sun 24 Mar 2019 01:57:10
+fitted parameters
+ -3.154889
+  0.047853
+ -0.495529
+  0.066723
+  0.029521
+  0.040154
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+ 11.292831
+deviation from the previous step
+  0.000000
+
+step 41 Sun 24 Mar 2019 01:58:34
+fitted parameters
+ -3.178430
+  0.007877
+ -0.453071
+  0.079065
+  0.005946
+  0.062205
+deviations from the previous step
+ -0.023541
+ -0.039976
+  0.042458
+  0.012341
+ -0.023575
+  0.022051
+minimum value
+  9.781794
+deviation from the previous step
+ -1.511037
+
+step 42 Sun 24 Mar 2019 02:00:03
+fitted parameters
+ -2.688425
+ -0.084297
+ -0.290868
+  0.000856
+  0.034003
+  0.033307
+deviations from the previous step
+  0.490005
+ -0.092174
+  0.162203
+ -0.078209
+  0.028058
+ -0.028898
+minimum value
+  5.678642
+deviation from the previous step
+ -4.103151
+
+step 43 Sun 24 Mar 2019 02:01:36
+fitted parameters
+ -2.688425
+ -0.084297
+ -0.290868
+  0.000856
+  0.034003
+  0.033307
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.678642
+deviation from the previous step
+  0.000000
+
+step 44 Sun 24 Mar 2019 02:03:13
+fitted parameters
+ -2.688425
+ -0.084297
+ -0.290868
+  0.000856
+  0.034003
+  0.033307
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.678642
+deviation from the previous step
+  0.000000
+
+step 45 Sun 24 Mar 2019 02:04:54
+fitted parameters
+ -2.688425
+ -0.084297
+ -0.290868
+  0.000856
+  0.034003
+  0.033307
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.678642
+deviation from the previous step
+  0.000000
+
+step 46 Sun 24 Mar 2019 02:06:39
+fitted parameters
+ -2.688425
+ -0.084297
+ -0.290868
+  0.000856
+  0.034003
+  0.033307
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.678642
+deviation from the previous step
+  0.000000
+
+step 47 Sun 24 Mar 2019 02:08:29
+fitted parameters
+ -2.688425
+ -0.084297
+ -0.290868
+  0.000856
+  0.034003
+  0.033307
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.678642
+deviation from the previous step
+  0.000000
+
+step 48 Sun 24 Mar 2019 02:10:23
+fitted parameters
+ -2.688425
+ -0.084297
+ -0.290868
+  0.000856
+  0.034003
+  0.033307
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.678642
+deviation from the previous step
+  0.000000
+
+step 49 Sun 24 Mar 2019 02:12:22
+fitted parameters
+ -2.962476
+ -0.003781
+ -0.439361
+  0.051407
+  0.006796
+  0.064636
+deviations from the previous step
+ -0.274050
+  0.080516
+ -0.148493
+  0.050551
+ -0.027207
+  0.031329
+minimum value
+  5.256345
+deviation from the previous step
+ -0.422298
+
+step 50 Sun 24 Mar 2019 02:14:26
+fitted parameters
+ -2.962476
+ -0.003781
+ -0.439361
+  0.051407
+  0.006796
+  0.064636
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.256345
+deviation from the previous step
+  0.000000
+
+step 51 Sun 24 Mar 2019 02:16:35
+fitted parameters
+ -2.962476
+ -0.003781
+ -0.439361
+  0.051407
+  0.006796
+  0.064636
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.256345
+deviation from the previous step
+  0.000000
+
+step 52 Sun 24 Mar 2019 02:18:48
+fitted parameters
+ -2.962476
+ -0.003781
+ -0.439361
+  0.051407
+  0.006796
+  0.064636
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  5.256345
+deviation from the previous step
+  0.000000
+
+step 53 Sun 24 Mar 2019 02:21:07
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.262837
+ -0.046680
+  0.187501
+ -0.048967
+  0.027348
+ -0.052793
+minimum value
+  4.071618
+deviation from the previous step
+ -1.184726
+
+step 54 Sun 24 Mar 2019 02:23:31
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  4.071618
+deviation from the previous step
+  0.000000
+
+step 55 Sun 24 Mar 2019 02:26:00
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  4.071618
+deviation from the previous step
+  0.000000
+
+step 56 Sun 24 Mar 2019 02:28:34
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  4.071618
+deviation from the previous step
+  0.000000
+
+step 57 Sun 24 Mar 2019 02:31:14
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  4.071618
+deviation from the previous step
+  0.000000
+
+step 58 Sun 24 Mar 2019 02:34:00
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  4.071618
+deviation from the previous step
+  0.000000
+
+step 59 Sun 24 Mar 2019 02:36:51
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  4.071618
+deviation from the previous step
+  0.000000
+
+step 60 Sun 24 Mar 2019 02:39:48
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  4.071618
+deviation from the previous step
+  0.000000
+
+step 61 Sun 24 Mar 2019 02:42:50
+fitted parameters
+ -2.699638
+ -0.050461
+ -0.251861
+  0.002440
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  4.071618
+deviation from the previous step
+  0.000000
+
+step 62 Sun 24 Mar 2019 02:45:58
+fitted parameters
+ -2.744339
+ -0.010296
+ -0.324646
+ -0.017796
+  0.043877
+  0.015695
+deviations from the previous step
+ -0.044701
+  0.040165
+ -0.072785
+ -0.020235
+  0.009733
+  0.003853
+minimum value
+  3.570420
+deviation from the previous step
+ -0.501198
+
+step 63 Sun 24 Mar 2019 02:49:12
+fitted parameters
+ -2.744339
+ -0.010296
+ -0.324646
+ -0.017796
+  0.043877
+  0.015695
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  3.570420
+deviation from the previous step
+  0.000000
+
+step 64 Sun 24 Mar 2019 02:52:33
+fitted parameters
+ -2.744339
+ -0.010296
+ -0.324646
+ -0.017796
+  0.043877
+  0.015695
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  3.570420
+deviation from the previous step
+  0.000000
+
+step 65 Sun 24 Mar 2019 02:56:00
+fitted parameters
+ -2.699638
+  0.016208
+ -0.265272
+ -0.005811
+  0.034144
+  0.011842
+deviations from the previous step
+  0.044701
+  0.026504
+  0.059374
+  0.011985
+ -0.009733
+ -0.003853
+minimum value
+  3.106924
+deviation from the previous step
+ -0.463496
+
+step 66 Sun 24 Mar 2019 02:59:33
+fitted parameters
+ -2.699638
+  0.016208
+ -0.265272
+ -0.005811
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  3.106924
+deviation from the previous step
+  0.000000
+
+step 67 Sun 24 Mar 2019 03:03:12
+fitted parameters
+ -2.699638
+  0.016208
+ -0.265272
+ -0.005811
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  3.106924
+deviation from the previous step
+  0.000000
+
+step 68 Sun 24 Mar 2019 03:06:59
+fitted parameters
+ -2.699638
+  0.016208
+ -0.265272
+ -0.005811
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  3.106924
+deviation from the previous step
+  0.000000
+
+step 69 Sun 24 Mar 2019 03:10:52
+fitted parameters
+ -2.699638
+  0.016208
+ -0.265272
+ -0.005811
+  0.034144
+  0.011842
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  3.106924
+deviation from the previous step
+  0.000000
+
+step 70 Sun 24 Mar 2019 03:14:51
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+ -0.127391
+ -0.001037
+ -0.081909
+  0.016515
+ -0.004378
+  0.012873
+minimum value
+  2.911158
+deviation from the previous step
+ -0.195766
+
+step 71 Sun 24 Mar 2019 03:18:58
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 72 Sun 24 Mar 2019 03:23:11
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 73 Sun 24 Mar 2019 03:27:32
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 74 Sun 24 Mar 2019 03:31:59
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 75 Sun 24 Mar 2019 03:36:34
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 76 Sun 24 Mar 2019 03:41:17
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 77 Sun 24 Mar 2019 03:46:07
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 78 Sun 24 Mar 2019 03:51:03
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 79 Sun 24 Mar 2019 03:56:08
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 80 Sun 24 Mar 2019 04:01:20
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 81 Sun 24 Mar 2019 04:06:45
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 82 Sun 24 Mar 2019 04:12:18
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 83 Sun 24 Mar 2019 04:17:55
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 84 Sun 24 Mar 2019 04:23:40
+fitted parameters
+ -2.827029
+  0.015171
+ -0.347181
+  0.010704
+  0.029766
+  0.024715
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  2.911158
+deviation from the previous step
+  0.000000
+
+step 85 Sun 24 Mar 2019 04:29:34
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.110694
+ -0.024403
+  0.102654
+ -0.009915
+ -0.005913
+ -0.006304
+minimum value
+  1.677981
+deviation from the previous step
+ -1.233177
+
+step 86 Sun 24 Mar 2019 04:35:37
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 87 Sun 24 Mar 2019 04:41:48
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 88 Sun 24 Mar 2019 04:48:08
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 89 Sun 24 Mar 2019 04:54:37
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 90 Sun 24 Mar 2019 05:01:15
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 91 Sun 24 Mar 2019 05:08:01
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 92 Sun 24 Mar 2019 05:14:57
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 93 Sun 24 Mar 2019 05:22:02
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 94 Sun 24 Mar 2019 05:29:17
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 95 Sun 24 Mar 2019 05:36:40
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 96 Sun 24 Mar 2019 05:44:11
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 97 Sun 24 Mar 2019 05:51:56
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 98 Sun 24 Mar 2019 05:59:49
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 99 Sun 24 Mar 2019 06:07:54
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 100 Sun 24 Mar 2019 06:16:07
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 101 Sun 24 Mar 2019 06:24:29
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 102 Sun 24 Mar 2019 06:33:00
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 103 Sun 24 Mar 2019 06:41:43
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 104 Sun 24 Mar 2019 06:50:34
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 105 Sun 24 Mar 2019 06:59:36
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 106 Sun 24 Mar 2019 07:08:50
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 107 Sun 24 Mar 2019 07:18:16
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 108 Sun 24 Mar 2019 07:27:52
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 109 Sun 24 Mar 2019 07:37:39
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 110 Sun 24 Mar 2019 07:47:35
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 111 Sun 24 Mar 2019 07:57:42
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 112 Sun 24 Mar 2019 08:08:07
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 113 Sun 24 Mar 2019 08:18:39
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 114 Sun 24 Mar 2019 08:29:25
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 115 Sun 24 Mar 2019 08:40:21
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 116 Sun 24 Mar 2019 08:51:27
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 117 Sun 24 Mar 2019 09:02:47
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 118 Sun 24 Mar 2019 09:14:18
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 119 Sun 24 Mar 2019 09:26:05
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 120 Sun 24 Mar 2019 09:38:00
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 121 Sun 24 Mar 2019 09:50:06
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 122 Sun 24 Mar 2019 10:02:28
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 123 Sun 24 Mar 2019 10:15:03
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 124 Sun 24 Mar 2019 10:27:47
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 125 Sun 24 Mar 2019 10:40:46
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 126 Sun 24 Mar 2019 10:53:54
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 127 Sun 24 Mar 2019 11:07:16
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 128 Sun 24 Mar 2019 11:20:53
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 129 Sun 24 Mar 2019 11:34:42
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 130 Sun 24 Mar 2019 11:48:46
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 131 Sun 24 Mar 2019 12:03:07
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 132 Sun 24 Mar 2019 12:17:40
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
+
+step 133 Sun 24 Mar 2019 12:32:25
+fitted parameters
+ -2.716335
+ -0.009232
+ -0.244527
+  0.000789
+  0.023853
+  0.018411
+deviations from the previous step
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+  0.000000
+minimum value
+  1.677981
+deviation from the previous step
+  0.000000
