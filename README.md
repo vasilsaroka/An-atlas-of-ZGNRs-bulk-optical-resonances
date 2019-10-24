@@ -14,12 +14,11 @@ This is Mathematica and partially Python code to reproduce Figures of the paper 
 </ul>
 
 <h2>Installation guide</h2>
-<div>The code as such does not require any specific installation other then configuration of Mathematica and Python.</div>
+<div>The code does not require any specific installation other then configuration of Mathematica and Python. However, compilation to C code is used in Mathematica to speed up optical absorption spectra calculations. See <a href="https://sites.google.com/site/sarokavasil/wolfram-mathematica">how to make Mathematica work with C compiler on Windows</a></div>
 <ul>
-  <li>Copy the repository to a separate folder on your PC</li>
+  <li>Copy the repository to a separate folder on your PC.</li>
   <li>Run code from the code directories Mathematica and python.</li>
 </ul>
-<div>Note, however, that compilation to C code is used in Mathematica. The tips how to install compilation on can be found <a href="https://sites.google.com/site/sarokavasil/wolfram-mathematica">here</a></div>
 
 <h2>Demo</h2>
 <ul>
