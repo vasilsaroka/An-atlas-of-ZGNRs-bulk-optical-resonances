@@ -14,7 +14,7 @@ This is Mathematica and partially Python code to reproduce Figures of the paper 
 </ul>
 
 <h2>Installation guide</h2>
-<div>The code does not require any specific installation other then configuration of Mathematica and Python. However, compilation to C code is used in Mathematica to speed up optical absorption spectra calculations. See <a href="https://sites.google.com/site/sarokavasil/wolfram-mathematica">how to make Mathematica work with C compiler on Windows</a></div>
+<div>The code does not require any specific installation other then configuration of Mathematica and Python. However, compilation to C code is used in Mathematica to speed up optical absorption spectra calculations. See <a href="https://sites.google.com/site/sarokavasil/wolfram-mathematica">how to make Mathematica working with C compiler on Windows</a></div>
 <ul>
   <li>Copy the repository to a separate folder on your PC.</li>
   <li>Run code from the code directories Mathematica and python.</li>
