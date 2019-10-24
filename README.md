@@ -31,7 +31,7 @@ This is Mathematica and partially Python code to reproduce Figures of the paper 
 </ul>
 
 <h2>Instructions for use</h2>
-<div>For Figure reproduction the code use precalculated data from raw data directory of the repository.</div>
+<div>For Figure reproduction this code uses precalculated data from raw data directory of the repository.</div>
 <ul>
 <li>Copy the repository to a separate folder on your computer.</li>
 <li>Navigate to the code-Mathematica and open Mathemaitca notebook `2N+4-rule and an atlas of bulk optical resonances of zigzag graphene nanoribbons.nb'</li>
@@ -40,3 +40,4 @@ This is Mathematica and partially Python code to reproduce Figures of the paper 
 </ul>
 
 <h2>License</h2>
+<div>GNU Lesser General Public License v3.0</div>
