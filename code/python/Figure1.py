@@ -124,7 +124,7 @@ for ind, g in enumerate(gs):
         ax.set_xlabel(r'$w$, width index')
     else:
         ax.set_xlabel(r'$n$, diameter index')
-    ax.set_ylabel(r'$\omega$, eV')
+    ax.set_ylabel(r'$\hbar \omega$, eV')
     ax.set_xticks(xticks)
     ax.set_yticks(yticks)
     ax.text(55, 7, label[ind],
