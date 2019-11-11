@@ -1,13 +1,15 @@
+[![DOI](https://zenodo.org/badge/217080787.svg)](https://zenodo.org/badge/latestdoi/217080787)
+
 # An-atlas-of-ZGNRs-bulk-optical-resonances
 
-
 This is Mathematica and partially Python code to reproduce Figures of the paper "2N+4-rule and an atlas of bulk optical resonances of zigzag graphene nanoribbons".
+
 
 
 <h2>Requirements</h2>
 <ul>
 <li>OS: The code was tested on Windows 7 and 10.</li>
-<li>Mathematica 10.4 11.3 or 12.</li>
+<li>Mathematica 10.4, 11.3 or 12.</li>
 <li>Packages <a href="https://library.wolfram.com/infocenter/MathSource/9355/">MaTeX</a>  by Szabolcs Horvát and <a href="https://library.wolfram.com/infocenter/Demos/5599/">CustomTicks</a> by Mark A. Caprio  are required in Mathematica.</li>
 <li>Python 3.7.1</li>
 <li>Packages numpy, scipy, matplotlib, re, os and datetime are required in the python script Figure1.py.</li>
