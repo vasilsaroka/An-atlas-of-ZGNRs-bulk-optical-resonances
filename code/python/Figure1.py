@@ -116,7 +116,7 @@ tfcolor='black'
 
 for ind, g in enumerate(gs):
     ax = fig.add_subplot(g)
-    im = ax.imshow(Z[ind].T[::-1], cmap='RdBu', vmin=abs(Z[ind]).min(), vmax=abs(Z[ind]).max(), aspect=7.5, extent=[0, 60, 0, 8])
+    im = ax.imshow(Z[ind].T[::-1], cmap='inferno', vmin=abs(Z[ind]).min(), vmax=abs(Z[ind]).max(), aspect=7.5, extent=[0, 60, 0, 8])
     im.set_interpolation('bilinear')
     #p = ax.pcolor(X[ind], Y[ind], Z[ind], cmap=matplotlib.cm.coolwarm, vmin=abs(Z[ind]).min(), vmax=abs(Z[ind]).max())
        
