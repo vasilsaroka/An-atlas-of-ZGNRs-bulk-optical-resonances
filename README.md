@@ -1,4 +1,5 @@
-[![DOI](https://zenodo.org/badge/217080787.svg)](https://zenodo.org/badge/latestdoi/217080787)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3538326.svg)](https://doi.org/10.5281/zenodo.3538326)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3547546.svg)](https://doi.org/10.5281/zenodo.3547546)
 
 # An-atlas-of-ZGNRs-bulk-optical-resonances
 
