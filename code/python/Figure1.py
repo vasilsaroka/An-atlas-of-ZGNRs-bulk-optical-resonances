@@ -112,7 +112,6 @@ yticks=np.linspace(0,8,5)
 fig = plt.figure(figsize=(9, 8))
 gs = gridspec.GridSpec(2, 2, height_ratios=[1, 1], width_ratios=[1, 1])
 tfcolor='black'
-#'YlOrRd'
 
 for ind, g in enumerate(gs):
     ax = fig.add_subplot(g)
