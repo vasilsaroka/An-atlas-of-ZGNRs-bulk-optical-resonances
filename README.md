@@ -1,5 +1,7 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3538326.svg)](https://doi.org/10.5281/zenodo.3538326)
+[![GitHub (pre-)release](https://img.shields.io/github/release/vasilsaroka/An-atlas-of-ZGNRs-bulk-optical-resonances/all.svg)](https://github.com/vasilsaroka/An-atlas-of-ZGNRs-bulk-optical-resonances/releases)
+[![Github All Releases](https://img.shields.io/github/downloads/vasilsaroka/An-atlas-of-ZGNRs-bulk-optical-resonances/total.svg)](https://github.com/vasilsaroka/An-atlas-of-ZGNRs-bulk-optical-resonances/releases)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3547546.svg)](https://doi.org/10.5281/zenodo.3547546)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # An-atlas-of-ZGNRs-bulk-optical-resonances
 
