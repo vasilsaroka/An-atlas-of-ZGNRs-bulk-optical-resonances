@@ -5,7 +5,7 @@
 
 # An-atlas-of-ZGNRs-bulk-optical-resonances
 
-This is Mathematica and partially Python code to reproduce results of the paper "2N+4-rule and an atlas of bulk optical resonances of zigzag graphene nanoribbons".
+This is Mathematica and partially Python code to reproduce results of the paper <a href="https://www.nature.com/articles/s41467-019-13728-8">"2N+4-rule and an atlas of bulk optical resonances of zigzag graphene nanoribbons"</a>, Nat. Commun. <b>11</b>, 82 (2020).
 
 
 
